@@ -1,0 +1,85 @@
+﻿body {
+    background-color: rgb(209, 242, 209) !important;
+}
+* {margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.rows {
+    overflow: auto;
+    padding: 10px 0px 5px 0px;
+}
+
+[class*="col-"] {
+    width: 100%;
+    float: left;
+    padding: 10px;
+}
+img {
+    width: 100%;
+    border-radius: 20px;
+}
+@media only screen and (min-width: 767px){
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+
+h1 {
+    font-family: 'Bahianita', cursive !important;
+    font-size: 400% !important;
+    text-transform: uppercase;
+    text-align: center;
+}
+.hello {
+    text-align: center;
+    background-image: url('./akatsuki.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.btn {
+    background-color: #554e4e !important;
+    margin-top: 2%;
+    margin-bottom: 2% !important;
+}
+.modal-header {
+    border-bottom: none !important;
+}
+.modal-body {
+    padding: 0px !important;
+    text-align: center;
+}
+.modal-footer {
+    border-top: none !important;
+    text-align: center !important;
+    padding-left: 30% !important;
+    padding-right: 30% !important;
+}
+input {
+    transform: scale(2);
+}
+.modal-footer button:hover {
+    color: aliceblue !important;
+    transform: scale(1.2);
+}
+.hello button:hover {
+    color: red;
+}
+#languages {
+    font-family: 'Bahianita', cursive;
+    transform: scaleY(2);
+    transform: scaleX(2);
+    float: left;
+    vertical-align: middle !important;
+    margin-top: 5%;
+}

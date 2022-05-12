@@ -1,0 +1,19 @@
+API-Token (API-Key)
+
+8463347e789cd1ef9b0580044a41bc56
+
+search
+https://gnews.io/api/v4/search?q=example&token=8463347e789cd1ef9b0580044a41bc56
+
+top headlines
+https://gnews.io/api/v4/top-headlines?&token=8463347e789cd1ef9b0580044a41bc56
+
+
+
+
+API-key trang khác
+Registration complete
+Your API key is: 8f66e1ff6561482f86c9609d478eb142
+
+
+

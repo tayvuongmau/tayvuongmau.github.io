@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale:1.0">
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <!--liên kết thư viện kí hiệu -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Project 4</title>
+        <!--font chữ-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bahianita&display=swap" rel="stylesheet">
+
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <script src="./jQuery3-6-0.js"></script>
+    </head>
+    <body>
+            <!-- Nút chào hỏi -->
+            <div class="hello">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    <h1>tây vương mẫu news <i class="fa fa-search"></i></h1>
+                </button>
+            </div>
+            <!-- Modal nút tìm kiếm -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h1 class="modal-title" id="exampleModalLabel">Bụt hiện lên và hỏi !</h1>
+                    </div>
+                    <div class="modal-body">
+                        <input id="post-search" type="text" placeholder="Thế giờ con muốn gì ?">
+                    </div>
+                    <div class="modal-footer">
+                        <select id="languages">
+                            <option value="en"><p>Tiếng Anh</p></option>
+                            <option value="cn"><p>Tiếng Trung</p></option>
+                            <option value="de"><p>Tiếng Đức</p></option>
+                            <option value="ca"><p>Tiếng Canada</p></option>
+                            <option value="es"><p>Tiếng Tây Ban Nha</p></option>
+                        </select>
+                        <button id="search" type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- Phần thân hiển thị web -->
+            <div id="tvmnews"></div>
+    <script src="./app.js"></script>
+    </body>
+</html>

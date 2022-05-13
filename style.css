@@ -65,8 +65,9 @@ h1 {
     padding-left: 30% !important;
     padding-right: 30% !important;
 }
-input {
+#post-search {
     transform: scale(2);
+    margin-bottom: 2%;
 }
 .modal-footer button:hover {
     color: aliceblue !important;
@@ -76,10 +77,18 @@ input {
     color: red;
 }
 #languages {
-    font-family: 'Bahianita', cursive;
+    /*font-family: 'Bahianita', cursive;
     transform: scaleY(2);
     transform: scaleX(2);
     float: left;
     vertical-align: middle !important;
-    margin-top: 5%;
+    margin-top: 5%;*/
+    transform: scale(1.2);
+    margin-bottom: 2%;
+}
+label {
+    margin-bottom: 0px !important;
+}
+label p {
+    margin-bottom: 0px !important;
 }

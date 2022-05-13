@@ -20,8 +20,8 @@ fetch('https://gnews.io/api/v4/top-headlines?&token=8463347e789cd1ef9b0580044a41
     });
 
 // Search
-function fetchSearch(postSearch, langs){
-        fetch(`https://gnews.io/api/v4/search?q=${postSearch}&${langs}&token=8463347e789cd1ef9b0580044a41bc56`)
+function fetchSearch(postSearch, langs, fromDate, toDate){
+        fetch(`https://gnews.io/api/v4/search?q=${postSearch}&${langs}&${fromDate}&${toDate}&token=8463347e789cd1ef9b0580044a41bc56`)
             .then(function (response) {
                 return response.json();
             })
@@ -48,7 +48,9 @@ var submitClick = document.getElementById('search');
 var timkiem = function(){
     var postSearch = document.getElementById('post-search').value;
     var langs = document.getElementById('languages').value;
-    fetchSearch(postSearch, langs); 
+    var fromDate = document.getElementById('fromDate').value;
+    var toDate = document.getElementById('toDate').value;
+    fetchSearch(postSearch, langs, fromDate, toDate); 
 };
 submitClick.addEventListener('click', timkiem);
 

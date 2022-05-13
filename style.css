@@ -77,12 +77,6 @@ h1 {
     color: red;
 }
 #languages {
-    /*font-family: 'Bahianita', cursive;
-    transform: scaleY(2);
-    transform: scaleX(2);
-    float: left;
-    vertical-align: middle !important;
-    margin-top: 5%;*/
     transform: scale(1.2);
     margin-bottom: 2%;
 }

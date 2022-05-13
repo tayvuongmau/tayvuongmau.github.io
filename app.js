@@ -40,6 +40,8 @@ function fetchSearch(postSearch, langs, fromDate, toDate){
                 var tvmSearch = tvmSearchs.join('');
                 document.getElementById('tvmnews').innerHTML = tvmSearch;
                 document.getElementById('post-search').value = "Điều ước tiếp theo là gì ?";
+                document.getElementById('fromDate').value = "";
+                document.getElementById('toDate').value = "";
             });
 };
 //func fetchSearch được gọi ra sau khi sự kiện click vào nút button xảy ra

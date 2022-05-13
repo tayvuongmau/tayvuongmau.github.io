@@ -39,6 +39,7 @@ function fetchSearch(postSearch, langs){
                 });
                 var tvmSearch = tvmSearchs.join('');
                 document.getElementById('tvmnews').innerHTML = tvmSearch;
+                document.getElementById('post-search').value = "Điều ước tiếp theo là gì ?";
             });
 };
 //func fetchSearch được gọi ra sau khi sự kiện click vào nút button xảy ra
